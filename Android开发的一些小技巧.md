@@ -95,7 +95,7 @@ Android 开发小技巧
 	edittext.setTransformationMethod(HideReturnsTransformationMethod.getInstance()); //显示密码
 	edittext.setTransformationMethod(PasswordTransformationMethod.getInstance());	 //隐藏密码
 
-16.	文本加超链接
+16.文本加超链接
 	Linkify.addLinks();
 
 17.按两次返回键退出的操作
