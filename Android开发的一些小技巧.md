@@ -1,6 +1,6 @@
 Android 开发小技巧
 
-1.碰到scrollView嵌套listView或recycleView 优先选择listView添加headView
+1.碰到<code>scrollView</code>嵌套<code>listView</code>或recycleView 优先选择listView添加headView
   嵌套listView的item高度问题，重新计算子View的高度  焦点事件
 
 2.android:clipToPadding的用法；
