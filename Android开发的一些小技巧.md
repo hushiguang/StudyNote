@@ -140,7 +140,7 @@ Android 开发小技巧
 26.android:animateLayoutChanges 这是一个非常酷炫的属性。在父布局加上 android:animateLayoutChanges="true" 后，
 	如果触发了layout方法（比如它的子View设置为GONE），系统就会自动帮你加上布局改变时的动画特效！！
 
-27. RecyclerView 可以直接在布局里面设置管理器
+27.RecyclerView 可以直接在布局里面设置管理器
 
 	app:layoutManager="android.support.v7.widget.RecyclerView.LayoutManager"
 
