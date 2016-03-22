@@ -6,7 +6,7 @@ Android 开发小技巧
 2.android:clipToPadding的用法；
   android:clipChildren的用法；
 
-3.Android查看运行
+3.Android查看运行的前台界面的activity
   adb shell "dumpsys window windows | grep -E 'mCurrentFocus'"
 
 4.滑动冲突事件
@@ -100,6 +100,14 @@ Android 开发小技巧
 
 17.按两次返回键退出的操作
 	判断toast.getView.getParent 是否为null即可
+	
+	 private void exitToast(){
+	        if (mToast.getView().getParent() != null){
+	            System.exit(0);
+	        }else {
+	            mToast.show();
+	        }
+	 }
 	
 18.没有滚动是因为 要滚动到的位置，已经在屏幕里面了，这时候是不滚动的，
 	只有要滚到的位置没有在屏幕上，才会滚动。
