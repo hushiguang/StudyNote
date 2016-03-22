@@ -20,6 +20,7 @@ Android 开发小技巧
 	不要在Application中存储重要的一些数据,所以我们小数据应该公告onSaveInstance保存，大数据就通过文件保存。
 
 7.dp，sp，px之间的装换
+
 	//转换dip为px 
 	  public static int convertDipOrPx(Context context, int dip) { 
 	      float scale = context.getResources().getDisplayMetrics().density; 
