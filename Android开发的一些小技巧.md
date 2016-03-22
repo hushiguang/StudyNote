@@ -1,6 +1,6 @@
 Android 开发小技巧
 
-1.碰到<code>scrollView</code>嵌套<code>listView</code>或<code>recycleView</code> 优先选择<code>listView</code>添加h<code>eadView</code>嵌套listView的item高度问题，重新计算子View的高度  焦点事件
+1.碰到<code>scrollView</code>嵌套<code>listView</code>或<code>recycleView</code> 优先选择<code>listView</code>添加<code>headView</code>嵌套listView的item高度问题，重新计算子View的高度  焦点事件
 
 2.android:clipToPadding的用法；
   android:clipChildren的用法；
