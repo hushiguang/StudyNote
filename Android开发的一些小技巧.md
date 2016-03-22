@@ -80,20 +80,27 @@ Android 开发小技巧
 	edittext.setInputType(EditorInfo.TYPE_CLASS_PHONE);
 
 11.bitmap及时回收
+
 12.所有的图片务必先用 "<https://tinypng.com/>" 压缩一遍
+
 13.使用CardView切记，否则AndroidL以上和L以下的版本显示的padding不一致
 	app:cardPreventCornerOverlap="true"
 	app:cardUseCompatPadding="true"
+
 14.科学计数法的类 DecimalFormat ，
 	文件大小格式化工具 Formatter.formatFileSize() 
 	字母索引工具类 AlphabetIndexer
+
 15.显示密码的操作
 	edittext.setTransformationMethod(HideReturnsTransformationMethod.getInstance()); //显示密码
 	edittext.setTransformationMethod(PasswordTransformationMethod.getInstance());	 //隐藏密码
+
 16.	文本加超链接
 	Linkify.addLinks();
+
 17.按两次返回键退出的操作
 	判断toast.getView.getParent 是否为null即可
+	
 18.没有滚动是因为 要滚动到的位置，已经在屏幕里面了，这时候是不滚动的，
 	只有要滚到的位置没有在屏幕上，才会滚动。
 	mLayoutManager = mRecyclerView.getLayoutManager();  
