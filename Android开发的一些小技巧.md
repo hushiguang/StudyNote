@@ -77,6 +77,7 @@ Android 开发小技巧
 
 10. 设置软键盘位数字
 	数字 number
+
 	edittext.setInputType(EditorInfo.TYPE_CLASS_PHONE);
 
 11.bitmap及时回收
@@ -84,6 +85,7 @@ Android 开发小技巧
 12.所有的图片务必先用 "<https://tinypng.com/>" 压缩一遍
 
 13.使用CardView切记，否则AndroidL以上和L以下的版本显示的padding不一致
+
 	app:cardPreventCornerOverlap="true"
 	app:cardUseCompatPadding="true"
 
@@ -92,6 +94,7 @@ Android 开发小技巧
 	字母索引工具类 AlphabetIndexer
 
 15.显示密码的操作
+
 	edittext.setTransformationMethod(HideReturnsTransformationMethod.getInstance()); //显示密码
 	edittext.setTransformationMethod(PasswordTransformationMethod.getInstance());	 //隐藏密码
 
@@ -119,14 +122,16 @@ Android 开发小技巧
 	adb shell "settings put global captive_portal_server www.v2ex.com"
 
 20.DrawLayout 记得设置无阴影模式 (去除黑色)
+
 	mDrawLayout.setScrimColor(getResources().getColor(android.R.color.transparent));
 	
 21.占位，可以用 Space 来取代 View。 最棒的一点是Space可以跳过 Draw 这个过程。
 
 22.android listview中的消息被软键盘遮挡了,在设置listview的时候加上android:transcriptMode="normal"就好了
 
-23.includeFontPadding="false"，TextView默认上下是有一定的padding的，
-	有时候我们可能不需要上下这部分留白，加上它即可。
+23.TextView默认上下是有一定的padding的，有时候我们可能不需要上下这部分留白，加上它即可。
+
+	includeFontPadding="false"
 
 24.ViewDragHelper,做过自定义ViewGroup的童鞋都应该知道这个东西吧，用来处理触摸事件的神器，
 
@@ -135,5 +140,7 @@ Android 开发小技巧
 26.android:animateLayoutChanges 这是一个非常酷炫的属性。在父布局加上 android:animateLayoutChanges="true" 后，
 	如果触发了layout方法（比如它的子View设置为GONE），系统就会自动帮你加上布局改变时的动画特效！！
 
-27. app:layoutManager="android.support.v7.widget.RecyclerView.LayoutManager"
-	RecyclerView 可以直接在布局里面设置管理器
+27. RecyclerView 可以直接在布局里面设置管理器
+
+	app:layoutManager="android.support.v7.widget.RecyclerView.LayoutManager"
+
