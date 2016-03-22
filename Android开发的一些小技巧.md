@@ -115,6 +115,7 @@ Android 开发小技巧
 	mLayoutManager.scrollToPositionWithOffset(pos, 0);  
 
 19.手机Wifi去叹号
+	
 	adb shell "settings put global captive_portal_server www.v2ex.com"
 
 20.DrawLayout 记得设置无阴影模式 (去除黑色)
