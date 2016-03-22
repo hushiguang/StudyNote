@@ -76,8 +76,7 @@ Android 开发小技巧
 
 9.ANR问题，且在activity退出之后，取消掉上个页面的线程操作	
 
-10. 设置软键盘位数字
-	数字 number
+10.设置软键盘位数字number
 
 	edittext.setInputType(EditorInfo.TYPE_CLASS_PHONE);
 
