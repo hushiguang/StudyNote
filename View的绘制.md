@@ -2,8 +2,7 @@
 
 View Tree Measure 
 * ViewGroup Measure
-<pre><code>
-     /**
+<pre><code> /**
      * Ask all of the children of this view to measure themselves, taking into
      * account both the MeasureSpec requirements for this view and its padding.
      * We skip children that are in the GONE state The heavy lifting is done in
@@ -12,7 +11,6 @@ View Tree Measure
      * @param widthMeasureSpec The width requirements for this view //widthMeasureSpec该视图的宽度要求
      * @param heightMeasureSpec The height requirements for this view  //heightMeasureSpec该视图的高度要求
      */
-
     protected void measureChildren(int widthMeasureSpec, int heightMeasureSpec) {
         final int size = mChildrenCount;  //所有子View的数量
         final View[] children = mChildren;
@@ -25,8 +23,7 @@ View Tree Measure
         }
     }
 </code></pre>
-<code><pre>
-     /**
+<code><pre> /**
      * Ask one of the children of this view to measure itself, taking into
      * account both the MeasureSpec requirements for this view and its padding.
      * The heavy lifting is done in getChildMeasureSpec.
@@ -51,8 +48,7 @@ View Tree Measure
 
         // 用于获取 View 最终的大小 View测量
         child.measure(childWidthMeasureSpec, childHeightMeasureSpec);
-    }
-</code></pre>
+    }</code></pre>
 <code><pre>
      /**
      * Does the hard part of measureChildren: figuring out the MeasureSpec to
@@ -76,9 +72,7 @@ View Tree Measure
     public static int getChildMeasureSpec(int spec, int padding, int childDimension) {
         int specMode = MeasureSpec.getMode(spec); //所提供的测量规范的模式
         int specSize = MeasureSpec.getSize(spec); //所提供的措施规范大小
-
         int size = Math.max(0, specSize - padding); // 取一个大的数
-
         int resultSize = 0;
         int resultMode = 0;
 
@@ -145,7 +139,7 @@ View Tree Measure
         //返回View的大小和模式
         return MeasureSpec.makeMeasureSpec(resultSize, resultMode);
     }
-<code><pre>
+</code></pre>
 
 * 测量模式的计算
 
