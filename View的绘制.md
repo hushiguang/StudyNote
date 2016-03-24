@@ -4,6 +4,8 @@ View Tree Measure
 * ViewGroup Measure
 
 <code>
+
+
 	/**
      * Ask all of the children of this view to measure themselves, taking into
      * account both the MeasureSpec requirements for this view and its padding.
@@ -13,6 +15,7 @@ View Tree Measure
      * @param widthMeasureSpec The width requirements for this view //widthMeasureSpec该视图的宽度要求
      * @param heightMeasureSpec The height requirements for this view  //heightMeasureSpec该视图的高度要求
      */
+
     protected void measureChildren(int widthMeasureSpec, int heightMeasureSpec) {
         final int size = mChildrenCount;  //所有子View的数量
         final View[] children = mChildren;
@@ -24,8 +27,10 @@ View Tree Measure
             }
         }
     }
+</code>
 
 
+<code>
      /**
      * Ask one of the children of this view to measure itself, taking into
      * account both the MeasureSpec requirements for this view and its padding.
@@ -52,6 +57,9 @@ View Tree Measure
         // 用于获取 View 最终的大小 View测量
         child.measure(childWidthMeasureSpec, childHeightMeasureSpec);
     }
+</code>
+
+<code>
 
 
      /**
@@ -163,6 +171,7 @@ View Tree Measure
 | UNSPECIFIED	| UNSPECIFIED	 |  UNSPECIFIED	|
 
 * View Measure
+
 <code>
 protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         setMeasuredDimension(getDefaultSize(getSuggestedMinimumWidth(), widthMeasureSpec),
