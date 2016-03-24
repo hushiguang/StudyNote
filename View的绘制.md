@@ -1,7 +1,8 @@
 # View树的绘制
 
 View Tree Measure 
-:   ViewGroup Measure
+* ViewGroup Measure
+
 <code>
 	/**
      * Ask all of the children of this view to measure themselves, taking into
@@ -161,14 +162,14 @@ View Tree Measure
 | UNSPECIFIED	| AT_MOST  		 |  UNSPECIFIED	|
 | UNSPECIFIED	| UNSPECIFIED	 |  UNSPECIFIED	|
 
-:   View Measure
-`
+* View Measure
+<code>
 protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         setMeasuredDimension(getDefaultSize(getSuggestedMinimumWidth(), widthMeasureSpec),
                 getDefaultSize(getSuggestedMinimumHeight(), heightMeasureSpec));
     }
 
-`
+</code>
 
   
 	
