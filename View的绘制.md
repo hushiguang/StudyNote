@@ -2,7 +2,6 @@
 
 View Tree Measure 
 * ViewGroup Measure
-
 <code>
 
 	/**
@@ -26,8 +25,7 @@ View Tree Measure
             }
         }
     }
-</code>
-<code>
+
 
      /**
      * Ask one of the children of this view to measure itself, taking into
@@ -55,8 +53,6 @@ View Tree Measure
         // 用于获取 View 最终的大小 View测量
         child.measure(childWidthMeasureSpec, childHeightMeasureSpec);
     }
-</code>
-<code>
 
      /**
      * Does the hard part of measureChildren: figuring out the MeasureSpec to
