@@ -2,9 +2,7 @@
 
 View Tree Measure 
 * ViewGroup Measure
-
-<code>
-
+<pre><code>
      /**
      * Ask all of the children of this view to measure themselves, taking into
      * account both the MeasureSpec requirements for this view and its padding.
@@ -26,8 +24,8 @@ View Tree Measure
             }
         }
     }
-
-
+</code></pre>
+<code><pre>
      /**
      * Ask one of the children of this view to measure itself, taking into
      * account both the MeasureSpec requirements for this view and its padding.
@@ -54,7 +52,8 @@ View Tree Measure
         // 用于获取 View 最终的大小 View测量
         child.measure(childWidthMeasureSpec, childHeightMeasureSpec);
     }
-
+</code></pre>
+<code><pre>
      /**
      * Does the hard part of measureChildren: figuring out the MeasureSpec to
      * pass to a particular child. This method figures out the right MeasureSpec
@@ -146,7 +145,7 @@ View Tree Measure
         //返回View的大小和模式
         return MeasureSpec.makeMeasureSpec(resultSize, resultMode);
     }
- </code>
+<code><pre>
 
 * 测量模式的计算
 
