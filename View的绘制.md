@@ -2,9 +2,10 @@
 
 View Tree Measure 
 * ViewGroup Measure
+
 <code>
 
-	/**
+     /**
      * Ask all of the children of this view to measure themselves, taking into
      * account both the MeasureSpec requirements for this view and its padding.
      * We skip children that are in the GONE state The heavy lifting is done in
@@ -163,15 +164,12 @@ View Tree Measure
 
 * View Measure
 
-<code>
-
+<pre><code>
 	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 	        setMeasuredDimension(getDefaultSize(getSuggestedMinimumWidth(), widthMeasureSpec),
-	                getDefaultSize(getSuggestedMinimumHeight(), heightMeasureSpec));
+	         getDefaultSize(getSuggestedMinimumHeight(), heightMeasureSpec));
 	    }
-
-</code>
-
+</code></pre>
   
 	
 
