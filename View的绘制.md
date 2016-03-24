@@ -5,7 +5,6 @@ View Tree Measure
 
 <code>
 
-
 	/**
      * Ask all of the children of this view to measure themselves, taking into
      * account both the MeasureSpec requirements for this view and its padding.
@@ -27,10 +26,10 @@ View Tree Measure
             }
         }
     }
+
 </code>
-
-
 <code>
+
      /**
      * Ask one of the children of this view to measure itself, taking into
      * account both the MeasureSpec requirements for this view and its padding.
@@ -58,9 +57,7 @@ View Tree Measure
         child.measure(childWidthMeasureSpec, childHeightMeasureSpec);
     }
 </code>
-
 <code>
-
 
      /**
      * Does the hard part of measureChildren: figuring out the MeasureSpec to
@@ -154,9 +151,9 @@ View Tree Measure
         return MeasureSpec.makeMeasureSpec(resultSize, resultMode);
     }
 
-
  </code>
 
+* 测量模式的计算
 
 | 父ViewGroup模式  |子View模式 | 最终子View的模式  |
 | :-------| --------:| :--: |
@@ -173,10 +170,11 @@ View Tree Measure
 * View Measure
 
 <code>
-protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        setMeasuredDimension(getDefaultSize(getSuggestedMinimumWidth(), widthMeasureSpec),
-                getDefaultSize(getSuggestedMinimumHeight(), heightMeasureSpec));
-    }
+
+	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+	        setMeasuredDimension(getDefaultSize(getSuggestedMinimumWidth(), widthMeasureSpec),
+	                getDefaultSize(getSuggestedMinimumHeight(), heightMeasureSpec));
+	    }
 
 </code>
 
