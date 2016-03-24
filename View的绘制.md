@@ -3,10 +3,10 @@
 View Tree Measure 
 * ViewGroup Measure
 <pre><code> 
-    /**
-     * @param widthMeasureSpec The width requirements for this view //widthMeasureSpec该视图的宽度要求
-     * @param heightMeasureSpec The height requirements for this view  //heightMeasureSpec该视图的高度要求
-     */
+	    /**
+	     * @param widthMeasureSpec The width requirements for this view //widthMeasureSpec该视图的宽度要求
+	     * @param heightMeasureSpec The height requirements for this view  //heightMeasureSpec该视图的高度要求
+	     */
     protected void measureChildren(int widthMeasureSpec, int heightMeasureSpec) {
         final int size = mChildrenCount;  //所有子View的数量
         final View[] children = mChildren;
@@ -20,11 +20,11 @@ View Tree Measure
     }
 </code></pre>
 <pre><code>
-     /**
-     * @param child The child to measure //需要测量的View
-     * @param parentWidthMeasureSpec The width requirements for this view  //widthMeasureSpec该视图的宽度要求
-     * @param parentHeightMeasureSpec The height requirements for this view //heightMeasureSpec该视图的高度要求
-     */
+	     /**
+	     * @param child The child to measure //需要测量的View
+	     * @param parentWidthMeasureSpec The width requirements for this view  //widthMeasureSpec该视图的宽度要求
+	     * @param parentHeightMeasureSpec The height requirements for this view //heightMeasureSpec该视图的高度要求
+	     */
     protected void measureChild(View child, int parentWidthMeasureSpec,
             int parentHeightMeasureSpec) {
         //拿到该View的布局参数
@@ -43,14 +43,14 @@ View Tree Measure
     }
 </code></pre>
 <pre><code>
-     /**
-     * @param spec The requirements for this view
-     * @param padding The padding of this view for the current dimension and
-     *        margins, if applicable
-     * @param childDimension How big the child wants to be in the current
-     *        dimension
-     * @return a MeasureSpec integer for the child
-     */
+	     /**
+	     * @param spec The requirements for this view
+	     * @param padding The padding of this view for the current dimension and
+	     *        margins, if applicable
+	     * @param childDimension How big the child wants to be in the current
+	     *        dimension
+	     * @return a MeasureSpec integer for the child
+	     */
     public static int getChildMeasureSpec(int spec, int padding, int childDimension) {
         int specMode = MeasureSpec.getMode(spec); //所提供的测量规范的模式
         int specSize = MeasureSpec.getSize(spec); //所提供的措施规范大小
