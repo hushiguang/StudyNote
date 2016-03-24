@@ -2,12 +2,8 @@
 
 View Tree Measure 
 * ViewGroup Measure
-<pre><code> /**
-     * Ask all of the children of this view to measure themselves, taking into
-     * account both the MeasureSpec requirements for this view and its padding.
-     * We skip children that are in the GONE state The heavy lifting is done in
-     * getChildMeasureSpec.
-     *
+<pre><code> 
+    /**
      * @param widthMeasureSpec The width requirements for this view //widthMeasureSpec该视图的宽度要求
      * @param heightMeasureSpec The height requirements for this view  //heightMeasureSpec该视图的高度要求
      */
@@ -23,11 +19,8 @@ View Tree Measure
         }
     }
 </code></pre>
-<code><pre> /**
-     * Ask one of the children of this view to measure itself, taking into
-     * account both the MeasureSpec requirements for this view and its padding.
-     * The heavy lifting is done in getChildMeasureSpec.
-     *
+<pre><code>
+     /**
      * @param child The child to measure //需要测量的View
      * @param parentWidthMeasureSpec The width requirements for this view  //widthMeasureSpec该视图的宽度要求
      * @param parentHeightMeasureSpec The height requirements for this view //heightMeasureSpec该视图的高度要求
@@ -36,7 +29,6 @@ View Tree Measure
             int parentHeightMeasureSpec) {
         //拿到该View的布局参数
         final LayoutParams lp = child.getLayoutParams();
-
         //获取该View的宽度的视图要求
         final int childWidthMeasureSpec = getChildMeasureSpec(parentWidthMeasureSpec,
                 mPaddingLeft + mPaddingRight, lp.width);
@@ -48,20 +40,10 @@ View Tree Measure
 
         // 用于获取 View 最终的大小 View测量
         child.measure(childWidthMeasureSpec, childHeightMeasureSpec);
-    }</code></pre>
-<code><pre>
+    }
+</code></pre>
+<pre><code>
      /**
-     * Does the hard part of measureChildren: figuring out the MeasureSpec to
-     * pass to a particular child. This method figures out the right MeasureSpec
-     * for one dimension (height or width) of one child view.
-     *
-     * The goal is to combine information from our MeasureSpec with the
-     * LayoutParams of the child to get the best possible results. For example,
-     * if the this view knows its size (because its MeasureSpec has a mode of
-     * EXACTLY), and the child has indicated in its LayoutParams that it wants
-     * to be the same size as the parent, the parent should ask the child to
-     * layout given an exact size.
-     *
      * @param spec The requirements for this view
      * @param padding The padding of this view for the current dimension and
      *        margins, if applicable
