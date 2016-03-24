@@ -26,7 +26,6 @@ View Tree Measure
             }
         }
     }
-
 </code>
 <code>
 
@@ -150,7 +149,6 @@ View Tree Measure
         //返回View的大小和模式
         return MeasureSpec.makeMeasureSpec(resultSize, resultMode);
     }
-
  </code>
 
 * 测量模式的计算
