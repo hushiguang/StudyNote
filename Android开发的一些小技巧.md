@@ -143,3 +143,8 @@ Android 开发小技巧
 
 	app:layoutManager="android.support.v7.widget.RecyclerView.LayoutManager"
 
+28.abdroid studio 控制台输出乱码,在<code>build.gradle</code>文件中加入
+	<pre><code>tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}</code></pre>
+
