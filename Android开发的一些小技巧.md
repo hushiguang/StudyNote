@@ -157,6 +157,6 @@ Android 开发小技巧
 		SystemBarTintManager tintManager = new SystemBarTintManager(this);
 		tintManager.setStatusBarTintEnabled(true);
 		tintManager.setStatusBarTintResource(R.color.topbar_bg);//状态背景色，可传drawable资源
-		// 状态栏沉浸，4.4+生效 >>>>>>>>>>>>>>>>>
-</code>
+		// 状态栏沉浸，4.4+生效 >>>>>>>>>>>>>>>>></code>
+
 
