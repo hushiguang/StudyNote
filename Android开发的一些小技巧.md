@@ -159,6 +159,6 @@ Android 开发小技巧
 		tintManager.setStatusBarTintResource(R.color.topbar_bg);//状态背景色，可传drawable资源
 		// 状态栏沉浸，4.4+生效 >>>>>>>>>>>>>>>>></code>
 
-30.<pre><code>?android:attr/selectableItemBackground 有界限的波纹</code></br>
+30.android5.0背景涟漪效果<pre><code>?android:attr/selectableItemBackground 有界限的波纹</code></br>
    <code>?android:attr/selectableItemBackgroundBorderless 可以超出视图区域的波纹</code></br>
    <code>?android:attr/selectableItemBackgroundBorderless 是21新添加的api</code></pre>
