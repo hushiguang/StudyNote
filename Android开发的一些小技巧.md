@@ -69,6 +69,15 @@ Android 开发小技巧
         }
         return y;
     }
+    /***
+    * 获取手机的NavigationBar的高度
+    */
+    private int getNavigationBarHeight() {
+        int resourceId = getResources().getIdentifier("navigation_bar_height", "dimen", "android");
+        int height = getResources().getDimensionPixelSize(resourceId);
+        Log.v("dbw", "Navi height:" + height);
+        return height;
+    }
 
 8.Json格式的错误
 	当有 String "can't convert jsonOnject" 的时候切记看下Json格式前面是否有多余字符？
